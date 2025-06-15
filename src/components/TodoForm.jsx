@@ -8,7 +8,7 @@ function TodoForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!todo.trim()) return;
-    addTodo({ todo, completed: false });
+    addTodo({ text: todo, completed: false });
     setTodo("");
   };
 
